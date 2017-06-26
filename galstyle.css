@@ -2,3 +2,16 @@ body {
     margin: 5px;
     background-color: lightyellow;
 }
+.navbar-default{
+    background-color: #2D9713;
+}
+
+.nav a{
+    color: #FEC731 !important;
+    font-weight: bold;
+    text-shadow: 1px 1px  black !important;
+}
+.navbar-brand{
+    color: #FEC731 !important;
+    font-weight: bold;
+}
