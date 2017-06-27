@@ -6,6 +6,7 @@ body {
     background-color: #2D9713;
     border: 2px solid #492704;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 .nav a{ /* all links within header */
     color: #FEC731 !important;
@@ -55,5 +56,5 @@ p a{
 }
 #carousel-example-generic{
     margin-left: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
