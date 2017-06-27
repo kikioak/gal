@@ -43,3 +43,7 @@ p{
     margin-left: 20px;
     font-family: 'Montserrat', sans-serif;
 }
+p a{
+    color: #FEC731;
+    text-decoration: underline;
+}
