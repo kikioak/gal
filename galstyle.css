@@ -62,11 +62,12 @@ p a{
     color: #2D9713;
     margin-left: 20px;
     font-family: 'Montserrat', sans-serif;
+    margin-left: 0px;
 }
 #Badges {
     position: relative;
     width: 30%;
-    min-width:250px;
+    min-width:200px;
     float: left;
     clear: none;
 }
