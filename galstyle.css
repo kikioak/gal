@@ -49,7 +49,7 @@ p a{
     color: #492704;
     text-decoration: underline;
 }
-#FAQs{
+#FAQs, #Badges{
     border: 2px solid #492704;
     padding: 5px;
     border-radius: 8px;
@@ -57,4 +57,24 @@ p a{
 #carousel-example-generic{
     margin-left: 0px;
     margin-bottom: 10px;
+}
+#Badges li{
+    color: #2D9713;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+#Badges {
+    position: relative;
+    width: 30%;
+    min-width:250px;
+    float: left;
+    clear: none;
+}
+#BadgePhotos {
+    position: relative; 
+    border: 2px solid #492704;
+    border-radius: 8px;
+    margin-left: 2%;
+    float: left;
+    clear: none;
 }
