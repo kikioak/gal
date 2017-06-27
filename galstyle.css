@@ -64,18 +64,10 @@ p a{
     font-family: 'Montserrat', sans-serif;
     margin-left: 0px;
 }
-#Badges {
-    position: relative;
-    width: 30%;
-    min-width:200px;
-    float: left;
-    clear: none;
+#myContainer {
+    min-width:430px;
 }
 #BadgePhotos {
-    position: relative; 
     border: 2px solid #492704;
     border-radius: 8px;
-    margin-left: 2%;
-    float: left;
-    clear: none;
 }
