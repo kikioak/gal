@@ -71,3 +71,6 @@ p a{
     border: 2px solid #492704;
     border-radius: 8px;
 }
+#Badges p{
+    margin-left: 0px;
+}
