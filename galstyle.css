@@ -10,7 +10,6 @@ body {
     color: #FEC731 !important;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    /*text-shadow: 1px 1px  black !important;*/
 }
 .navbar-brand{ /* GG logo*/
     color: #FEC731 !important;
@@ -18,23 +17,22 @@ body {
 }
 .dropdown-menu a{ /* links in dropdown menu */
     color: #2D9713 !important;
-    text-shadow: 0px 0px !important;
     height: 25px;
 }
+.navbar-default .navbar-nav .open a,
 .dropdown-menu{
         background-color: #FEC731;
 }
-.navbar-default .navbar-nav  li  a:hover, /*when hover on links*/
-.navbar-default .navbar-nav  .open  a:focus { /*when dropdown open*/ 
+.navbar-default .navbar-nav .open a:hover, /*when dropdown open*/ 
+.navbar-default .navbar-nav .open a:focus,
+.navbar-default .navbar-nav  li  a:hover{/*when hover on links*/
     color: #2D9713  !important;
     text-shadow: 0px 0px !important;
-    background-color: #FEFEA2;
+    background-color: #FEFEA2 !important;
     text-decoration: underline;
 }
-#navbarimage{
-    height: 50px;
-    background-color: #FEFEA2;
-}
+
+
 h4{
     color: #2D9713;
     font-family: 'Montserrat', sans-serif;
