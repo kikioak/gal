@@ -9,6 +9,7 @@ body {
 .nav a{ /* all links within header */
     color: #FEC731 !important;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
     /*text-shadow: 1px 1px  black !important;*/
 }
 .navbar-brand{ /* GG logo*/
@@ -33,4 +34,14 @@ body {
 #navbarimage{
     height: 50px;
     background-color: #FEFEA2;
+}
+h4{
+    color: #2D9713;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+p{
+    color: #2D9713;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
