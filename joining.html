@@ -68,9 +68,9 @@
             </form>
         </div>
 
-        <p>Output Squad info from search, or output: "Sorry there are not currently any GAL Squads to join in your area!"</p>
-        <p id="interestP"><br>Let us know you're <a id="interestLink" href="#interestP">interested</a>! If more GALs near you express interest as well, we will link you
-            together for a potential new Squad.</p>
+        <p>---Output Squad info from search, or output: "Sorry there are not currently any GAL Squads to join in your area!"---</p>
+        <p id="interestP"><br>Let us know you're <a id="interestLink" href="#interestP">interested</a>! If more GALs near you express interest
+            as well, we will link you together for a potential new Squad.</p>
         <div id="interested">
         </div>
         <p id="newP">Already have a great group of GALs? <a id="newLink" href="#newP">Start a New GAL Squad!</a></p>
@@ -79,10 +79,12 @@
     </div>
 
 
-    <script  src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/184b5fc5b1.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
     <script>
         $('#interestLink').on('click', function (e) {
             $('#newSquad').html(``);
@@ -91,16 +93,16 @@
     <div id="form">
         <form class="navbar-form navbar-left" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwgPU2kcZTnxYMUZNV21pfWDQjNsZ3hZLyqucTJhhRU5xbqxhsL/exec">
             <div class="form-group">
-                <input name="Name" type="text" class="form-control" placeholder="Full Name">
+                <input name="Name" type="text" class="form-control" placeholder="Full Name" required>
             </div>
             <div class="form-group">
-                <input name="Age" type="text" class="form-control" placeholder="Age">
+                <input name="Age" type="text" class="form-control" placeholder="Age" required>
             </div>
             <div class="form-group">
-                <input name="ZipCode" type="text" class="form-control" placeholder="Zip Code">
+                <input name="ZipCode" type="text" class="form-control" placeholder="Zip Code" required>
             </div>
             <div class="form-group">
-                <input name="Email" type="text" class="form-control" placeholder="Email">
+                <input name="Email" type="text" class="form-control" placeholder="Email" required>
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
         </form>
@@ -108,7 +110,7 @@
             `)
         });
 
-        
+
         $('#newLink').on('click', function (e) {
             $('#interested').html(``);
             $('#newSquad').html(`
@@ -116,16 +118,16 @@
     <div id="form">
         <form class="navbar-form navbar-left" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwgPU2kcZTnxYMUZNV21pfWDQjNsZ3hZLyqucTJhhRU5xbqxhsL/exec">
             <div class="form-group">
-                <input name="Name" type="text" class="form-control" placeholder="Number of GALs">
+                <input name="Number" type="text" class="form-control" placeholder="Number of GALs" required>
             </div>
             <div class="form-group">
-                <input name="Age" type="text" class="form-control" placeholder="Zip Code">
+                <input name="Zip" type="text" class="form-control" placeholder="Zip Code" required>
             </div>
             <div class="form-group">
-                <input name="ZipCode" type="text" class="form-control" placeholder="Leader Name">
+                <input name="Leader" type="text" class="form-control" placeholder="Leader Name" required>
             </div>
             <div class="form-group">
-                <input name="Email" type="text" class="form-control" placeholder="Leader Email">
+                <input name="LeaderEmail" type="text" class="form-control" placeholder="Leader Email" required>
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
         </form>
