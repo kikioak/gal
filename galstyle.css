@@ -1,13 +1,16 @@
 body {
     margin: 5px;
-    background-color: #FEFEC7; 
-    /*#FEFEA2*/
+    background-color: #FEFEC7;
+    
 }
 .navbar-default{  /*nav bar*/
     background-color: #2D9713;
     border: 2px solid #492704;
     border-radius: 8px;
     margin-bottom: 10px;
+    /*position: fixed;*/
+
+    /*position: relative;*/
 }
 .nav a{ /* all links within header */
     color: #FEC731 !important;
@@ -68,6 +71,7 @@ p a{
 }
 #myContainer {
     min-width:430px;
+    margin-top: 70px;
 }
 #BadgePhotos {
     border: 2px solid #492704;
@@ -79,4 +83,8 @@ p a{
 #form{
     overflow: hidden;
     margin-bottom: 10px;
+}
+.credit{
+    font-size: 10px;
+    float: right;
 }
