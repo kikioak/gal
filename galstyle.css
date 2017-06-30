@@ -1,6 +1,7 @@
 body {
     margin: 5px;
     background-color: #FEFEC7;
+    background-image: url('kikipatternt.jpg')
     
 }
 .navbar-default{  /*nav bar*/
@@ -8,10 +9,8 @@ body {
     border: 2px solid #492704;
     border-radius: 8px;
     margin-bottom: 10px;
-    margin: 5px;
-    /*position: fixed;*/
+    /*margin: 5px;*/
 
-    /*position: relative;*/
 }
 .nav a{ /* all links within header */
     color: #FEC731 !important;
@@ -74,7 +73,7 @@ p a{
     min-width: 430px;
 }
 .myContainer {
-    margin-top: 70px;
+    margin-top: 60px;
 }
 #BadgePhotos {
     border: 2px solid #492704;
