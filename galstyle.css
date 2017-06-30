@@ -1,9 +1,8 @@
 body {
     margin: 5px;
     background-color: #FEFEC7;
-    background-image: url('kikipatternt.jpg')
-    
-}
+    background-image: url('kikipatternt.jpg');
+    }
 .navbar-default{  /*nav bar*/
     background-color: #2D9713;
     border: 2px solid #492704;
@@ -38,8 +37,6 @@ body {
     background-color: #FEFEC7 !important;
     text-decoration: underline;
 }
-
-
 h4{
     color: #2D9713;
     font-family: 'Montserrat', sans-serif;
@@ -70,9 +67,6 @@ p a{
     font-family: 'Montserrat', sans-serif;
     margin-left: 0px;
 }
-#carousel {
-    min-width: 430px;
-}
 .myContainer {
     margin-top: 60px;
 }
@@ -83,7 +77,7 @@ p a{
 #Badges p{
     margin-left: 0px;
 }
-#form{
+#searchForm, #form{
     overflow: hidden;
     margin-bottom: 10px;
 }

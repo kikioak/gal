@@ -57,7 +57,7 @@
             <h4>Interested in Joining?</h4>
             <p>Find a Squad near you:</p>
 
-            <div id="form">
+            <div id="searchForm">
                 <form class="navbar-form navbar-left" role="search">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Zip Code">
@@ -68,8 +68,9 @@
                     <button type="submit" class="btn btn-default">Submit</button>
                 </form>
             </div>
+            <div id="searchOutput">
+            </div>
 
-            <p><i>---Output Squad info from search, or output: "Sorry there are not currently any GAL Squads to join in your area!"---</i></p>
             <p id="interestP"><br>Let us know you're <a id="interestLink" href="#interestP">interested</a>! If more GALs near you express interest
                 as well, we will link you together for a potential new Squad.</p>
             <div id="interested">
@@ -92,7 +93,6 @@
         $('#interestLink').on('click', function (e) {
             $('#newSquad').html(``);
             $('#interested').html(`
-
     <div id="form">
         <form class="navbar-form navbar-left" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwgPU2kcZTnxYMUZNV21pfWDQjNsZ3hZLyqucTJhhRU5xbqxhsL/exec">
             <div class="form-group">
@@ -114,9 +114,19 @@
         });
 
 
-        $('#newLink').on('click', function (e) {
+        $('#searchForm').on('submit', function (e) {
+            e.preventDefault();
             $('#interested').html(``);
-            $('#newSquad').html(`
+            $('#newSquad').html(``);
+            $('#searchOutput').html(`
+            <h4>Sorry there are not currently any GAL Squads to join in your area!</h4>`);
+
+        });
+
+
+        $('#newLink').on('click', function (e) {
+                $('#interested').html(``);
+                $('#newSquad').html(`
 
     <div id="form">
         <form class="navbar-form navbar-left" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyCKFMx0gg7JBfrPU9CCgzc9Oq5sM0kI78Xu08kPC27mqHsWmw/exec">
@@ -136,7 +146,7 @@
         </form>
     </div>        
             `)
-        });
+            });
     </script>
 </body>
 
